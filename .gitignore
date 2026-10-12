@@ -1,0 +1,11 @@
+.idea/
+.venv/
+.vscode/
+__pycache__/
+output/
+
+CSCY 2000/data_sets/
+CSCY 2000/workflows/images/
+
+CSCY 2000/data_sets/
+CSCY 2000/workflows/images/

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Household Haven</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Parkinsans:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- company logo -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logoimg" src="images/hhlogo.png" alt="img of household haven logo"></a>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <div class="main-content">
+
+        <!-- a grid for the type of appliances provided -->
+        <div class="tablet-desktop">
+            <!-- standard nav -->
+            <nav class="tablet-desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="kitchen.html">Kitchen Appliances</a>
+                <a href="cleaning.html">Cleaning Appliances</a>
+                <a href="smarthome.html">Smart Home Appliances</a>
+                <a href="furniture.html">Furniture</a>
+                <a href="contactabout.html">About Us</a>
+            </nav>
+
+            <h1>Welcome to Household Haven!</h1>
+            <p>Discover our exclusive range of appliances, hand-picked for your convenience.</p>
+
+            <div class="product-grid">
+                <!-- image when clicked, leads to the kitchen.html product page -->
+                <div class="product-card">
+                    <a href="kitchen.html">
+                        <img src="images/kitchenappliances.jpg" alt="image of cleaning appliances">
+                    </a>
+                    <h3>Kitchen Appliances</h3>
+                </div>
+     
+                <!-- image when clicked, leads to the cleaning.html product page -->
+                <div class="product-card">
+                    <a href="cleaning.html">
+                        <img src="images/cleaningimages/cleaningappliances.jpg" alt="Product Image">
+                    </a>
+                    <h3>Cleaning Appliances</h3>
+                </div>
+                
+                <!-- this smarthome image links to smart home appliances -->
+                <div class="product-card">
+                    <a href="smarthome.html">
+                        <img src="https://img.freepik.com/free-photo/digital-tablet-screen-with-smart-home-controller-wooden-table_53876-98547.jpg" alt="image of smart home appliances">
+                    </a>
+                    <h3>Smart Home Appliances</h3>
+                </div>
+                
+                <!-- this furniture image links to furniture -->
+                <div class="product-card">
+                    <a href="furniture.html">
+                        <img src="images/furnitures.jpg" alt="image of various furniture">
+                    </a>
+                    <h3>Furniture</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile">
+            <!-- mobile nav -->
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="kitchen.html">Kitchen Appliances</a>
+                    <a href="cleaning.html">Cleaning Appliances</a>
+                    <a href="smarthome.html">Smart Home Appliances</a>
+                    <a href="furniture.html">Furnitures</a>
+                    <a href="contactabout.html">About Us</a>
+                </div>
+                
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+
+            <div class="product-grid">
+                <!-- image when clicked, leads to the kitchen.html product page -->
+                <div class="product-card">
+                    <a href="kitchen.html">
+                        <img src="images/kitchenappliances.jpg" alt="image of kitchen appliances">
+                    </a>
+                </div>
+     
+                <!-- image when clicked, leads to the cleaning.html product page -->
+                <div class="product-card">
+                    <a href="cleaning.html">
+                        <img src="images/cleaningappliances.jpg" alt="image of cleaning appliances">
+                    </a>
+                </div>
+                
+                <!-- this smarthome image links to smart home appliances -->
+                <div class="product-card">
+                    <a href="smarthome.html">
+                        <img src="https://img.freepik.com/free-photo/digital-tablet-screen-with-smart-home-controller-wooden-table_53876-98547.jpg" alt="image of smart home appliances">
+                    </a>
+                </div>
+                
+                <!-- this smarthome image links to furniture -->
+                <div class="product-card">
+                    <a href="furniture.html">
+                        <img src="images/furniture2.jpg" alt="image of various furniture">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- lists the group members who worked on this page and some (fake) contact info for the business -->
+    <footer>
+        <p><a href="addyelleportfolio.html">Addyelle Dizon; </a><a href="drewportfolio.html"> Drew Higbee; </a><a href="jaxenportfolio.html"> Jaxen Politowicz; </a><a href="krishnaportfolio.html">Krishna Shah; </a><a href="lydiaportfolio.html">Lydia Porter</a></p>
+        
+        <!-- Lydia's use of bootstrap: social media icons -->
+        <a href="https://www.facebook.com" target="_blank"> <!-- link the icon to facebook.com and open it in a new tab -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+        </a>
+          
+        <a href="https://www.x.com" target="_blank">
+          <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg>    
+        </a>
+       
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <p><a href="mailto:customservice@householdhaven.com"></a>customservice@householdhaven.com</p>
+	</footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

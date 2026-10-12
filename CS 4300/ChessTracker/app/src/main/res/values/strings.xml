@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OTB Chess Tracker</string>
+    <string name="title">Chess Move Tracker</string>
+    <string name="turn_text">White to Move</string>
+    <string name="add_move">Add Move</string>
+    <string name="reset_game">Reset</string>
+    <string name="move_hint">Enter move (e2 e4)</string>
+
+    <string-array name="chess_openings">
+        <item>King Pawn Opening</item>
+        <item>Queen Gambit</item>
+        <item>Ruy Lopez</item>
+        <item>Sicilian Defense</item>
+        <item>French Defense</item>
+    </string-array>
+</resources>

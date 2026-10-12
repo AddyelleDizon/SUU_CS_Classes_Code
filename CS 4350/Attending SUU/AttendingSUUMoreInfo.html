@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://lumos.csis.suu.edu/~barkern/CS_4350/AttendingSUUMoreInfo.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Attending SUU More Info</title>
+    <link rel="stylesheet" href="attendingsuu.css">
+    <script src="AttendingSUU.js"></script>
+</head>
+<body>
+    <form id="mainForm" action="AttendingSUUEvenMoreInfo.html">
+        <p>SUU Checklist:</p>
+        <label>I completed registration <input type="checkbox" id="regComplete" name="Registration-Complete" onclick="cbClicked('regComplete', 5)"> </label>
+        <br>
+        <label>I found my dorm room<input type="checkbox" id="dormFound" name="Dorm-Found" onclick="cbClicked('dormFound', 5)"> </label>
+        <br>
+        <label>I found the cafeteria<input type="checkbox" id="cafeFound" name="Cafe-Found" onclick="cbClicked('cafeFound', 5)"> </label>
+        <br>
+        <label>I made a friend<input type="checkbox" id="friendFound" name="Friend-Found" onclick="cbClicked('friendFound', 5)"> </label>
+        <br>
+        <label>I paid my tuition<input type="checkbox" id="tuitionPaid" name="Tuition-Paid" onclick="cbClicked('tuitionPaid', 5)"> </label>
+        <br>
+        
+        <br>I have selected the following degree:<br>
+        <input type="radio" name="Degree" id="CS" value="CS" onclick="cbClicked('CS', 20)">
+        <label for="CS">BS in Computer Science</label><br>
+         
+        <input type="radio" name="Degree" id="Cyber" value="Cyber" onclick="cbClicked('Cyber', 20)">
+        <label for="Cyber">BS in Cybersecurity</label><br>
+        
+        <input type="radio" name="Degree" id="CSCert" value="CSCert" onclick="cbClicked('CSCert', 20)">
+        <label for="CSCert">Computer Science Certificate</label><br>
+        
+        <input type="radio" name="Degree" id="CyberMasters" value="CyberMasters" onclick="cbClicked('CyberMasters', 20)">
+        <label for="CyberMasters">Cybersecurity Masters</label><br>
+        
+        <input type="radio" name="Degree" id="NotListed" value="NotListed" onclick="cbClicked('NotListed', 20)">
+        <label for="NotListed">My degree is not listed</label><br>
+
+        <br>
+        <label>My Hogwarts House is:
+            <select id="hogwartsHouse" name="Hogwarts-House" onclick="cbClicked('hogwartsHouse', -5)">
+                <option>Select a Hogwarts House</option>
+            </select>
+
+            <script>
+                populateHogwarts()
+            </script>
+        </label>
+
+        <br>
+        <br>
+        My Favorite Harry Potter Character is:
+        <br>
+        <div id="favCharacter" name="Favorite-Character" onclick="cbClicked('favCharacter', -10)">
+            <script>
+                characterOptions()
+            </script>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+    </form>
+
+    <br>
+    <h3>I chose to change the text themselves into the SUU colors.</h3>
+    <p id = "suured">SUU Red is the following Hex value: #DB0000</p>
+    <p id = "suublack">SUU Black is the following Hex value: #000000</p>
+    <p id = "suugray">SUU Grey is the following Hex value: #E7E7E7</p>
+    <br>
+    <input type="text" id="points" name="points" value="Completion Score: 0"  disabled="">
+    <script>
+        preserveFormData("mainForm")
+    </script>
+</body>
+
+
+</html>

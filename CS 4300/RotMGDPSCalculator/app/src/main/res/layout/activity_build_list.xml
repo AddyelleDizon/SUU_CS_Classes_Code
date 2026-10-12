@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rotmg_bg"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_hero_panel"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtBuildListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Builds"
+            android:textColor="@color/rotmg_text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtBuildListSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Review your saved loadouts and compare DPS setups."
+            android:textColor="@color/rotmg_text_secondary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBuilds"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_recycler_panel"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

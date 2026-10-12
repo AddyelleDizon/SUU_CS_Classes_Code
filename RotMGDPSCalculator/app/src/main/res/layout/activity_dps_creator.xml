@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weapon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerWeapon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ability"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerAbility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Armor"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerArmor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ring"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekDefense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/txtDefense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enemy Defense: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate DPS" />
+    </LinearLayout>
+</ScrollView>

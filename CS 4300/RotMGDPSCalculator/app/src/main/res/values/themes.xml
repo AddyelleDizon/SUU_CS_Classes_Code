@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RotMG" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/rotmg_primary</item>
+        <item name="colorPrimaryDark">@color/rotmg_primary_dark</item>
+        <item name="colorAccent">@color/rotmg_accent</item>
+        <item name="android:statusBarColor">@color/rotmg_primary_dark</item>
+        <item name="android:navigationBarColor">@color/rotmg_bg</item>
+        <item name="android:windowBackground">@color/rotmg_bg</item>
+        <item name="android:textColorPrimary">@color/rotmg_text_primary</item>
+        <item name="android:textColorSecondary">@color/rotmg_text_secondary</item>
+        <item name="buttonStyle">@style/RotmgButton</item>
+        <item name="spinnerStyle">@style/RotmgSpinner</item>
+        <item name="seekBarStyle">@style/RotmgSeekBar</item>
+    </style>
+
+    <style name="RotmgButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rotmg_text_primary</item>
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="RotmgSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:background">@drawable/bg_input_surface</item>
+        <item name="android:popupBackground">@color/rotmg_surface_alt</item>
+    </style>
+
+    <style name="RotmgSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:thumbTint">@color/highlight_red</item>
+        <item name="android:progressTint">@color/highlight_red</item>
+        <item name="android:progressBackgroundTint">@color/rotmg_divider</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tamogotchi</string>
+    <string name="nameLabel">Name: </string>
+    <string name="ageLabel">Age: </string>
+    <string name="hungerLabel">Hunger: </string>
+    <string name="happyLabel">Happiness: </string>
+    <string name="energyLabel">Energy: </string>
+
+    <string name="feedButton">Feed Me!</string>
+    <string name="playButton">Play With Me!</string>
+    <string name="sleepButton">Put Me to Sleep!</string>
+</resources>

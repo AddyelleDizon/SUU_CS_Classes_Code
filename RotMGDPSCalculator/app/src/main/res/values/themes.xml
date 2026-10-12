@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RotMG" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#4B2E83</item>
+        <item name="colorPrimaryDark">#2B1B47</item>
+        <item name="colorAccent">#D4AF37</item>
+        <item name="android:statusBarColor">#2B1B47</item>
+        <item name="android:windowBackground">#121212</item>
+    </style>
+</resources>

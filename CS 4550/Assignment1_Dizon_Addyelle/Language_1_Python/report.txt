@@ -1,0 +1,17 @@
+Valid transactions: 6
+Invalid transactions: 11
+Total revenue: 3068.53
+Highest-value transaction: ID 1001, Laptop, Electronics, Qty 2, Price 799.99, Value 1599.98
+
+Category Totals:
+Electronics: 1849.73
+Furniture: 1018.80
+Misc: 200.00
+
+Sorted Transactions:
+1001,Laptop,Electronics,2,799.99,1599.98
+1004,Chair,Furniture,4,129.95,519.80
+1003,Desk,Furniture,2,249.50,499.00
+1002,Keyboard,Electronics,5,49.95,249.75
+2001,Special Item A,Misc,10,10.00,100.00
+2002,Special Item B,Misc,5,20.00,100.00

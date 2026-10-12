@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Facebook</string>
+    <string name="name">Nombre</string>
+    <string name="submit_button">Enviar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="next_button">Siguiente</string>
+    <string name="back_button">Atrás</string>
+    <string name="menu_button">Menú</string>
+    <string name="title_label">¡Bienvenido a Facebook!</string>
+    <string name="friends_button">Amigos</string>
+    <string name="status_label">Ingrese su estado aquí:</string>
+    <string name="groups_label">Grupos</string>
+    <string name="meta_label">Meta</string>
+</resources>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://lumos.csis.suu.edu/~barkern/CS_4350/AttendingSUUEvenMore.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Attending SUU Even More Info</title>
+        <style>
+        /* Internal CSS  */
+        h1 {
+            color: green;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        div {
+            color: blue;
+            font-size: 25px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+    <script src="AttendingSUU.js"></script>
+    <link rel="stylesheet" href="attendingsuu.css">
+</head>
+<body>
+    <form id="mainForm" action="AttendingSUUPage4.html">
+        <label> Birthday (month and year):<input type="month" max="2025-10" name="Birthday" id="monthmonth" onclick="setMonthMax('monthmonth', 'max')"></label>
+        <br>
+        <strong>Note:</strong> type="month" is not supported in Firefox, Safari, or Internet Explorer 11.
+        <br>
+        <label>Select a color you enjoy: <input type="color" name="Favorite-Color" value="#ff0000"></label>
+        <br>
+        <label>What day was your favorite this month?<input type="number" name="Favorite-Day" id="maxday" min="1" onclick="setDayMax('monthmonth', 'maxday')"></label>
+        <br>
+        <label>Enter your school email (.edu): <input type="email" name="School-Email" id="schemail" onblur="validateSchoolEmail('mainForm', 'schemail')"></label>
+        <br>
+        <label>Enter your personal email (not .edu): <input type="email" name="Personal-Email" id="persemail" onblur="validatePersonalEmail('mainForm', 'persemail')"></label>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+    </form>
+
+    <h3>I chose to change the text themselves into the SUU colors.</h3>
+    <p id = "suured">SUU Red is the following Hex value: #DB0000</p>
+    <p id = "suublack">SUU Black is the following Hex value: #000000</p>
+    <p id = "suugray">SUU Grey is the following Hex value: #E7E7E7</p>
+
+    <script>
+        preserveFormData("mainForm")
+    </script>
+
+
+</body></html>

@@ -1,0 +1,11 @@
+Line 6: Duplicate transaction ID
+Line 7: Transaction ID must be a positive integer
+Line 8: Transaction ID must be a positive integer
+Line 9: Product name cannot be empty
+Line 10: Category cannot be empty
+Line 11: Quantity must be a positive integer
+Line 12: Quantity must be a positive integer
+Line 13: Unit price must be >= 0.00 with max 2 decimals
+Line 14: Unit price must be >= 0.00 with max 2 decimals
+Line 15: Does not contain exactly 5 fields
+Line 16: Does not contain exactly 5 fields

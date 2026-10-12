@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1">
+    <tool name="AND Gate">
+      <a name="inputs" val="2"/>
+    </tool>
+    <tool name="OR Gate">
+      <a name="inputs" val="2"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(140,330)" to="(140,470)"/>
+    <wire from="(260,150)" to="(260,160)"/>
+    <wire from="(260,200)" to="(260,210)"/>
+    <wire from="(260,270)" to="(260,280)"/>
+    <wire from="(260,320)" to="(260,330)"/>
+    <wire from="(150,350)" to="(150,500)"/>
+    <wire from="(110,500)" to="(150,500)"/>
+    <wire from="(140,270)" to="(180,270)"/>
+    <wire from="(140,330)" to="(180,330)"/>
+    <wire from="(140,150)" to="(170,150)"/>
+    <wire from="(140,210)" to="(170,210)"/>
+    <wire from="(150,230)" to="(180,230)"/>
+    <wire from="(150,350)" to="(180,350)"/>
+    <wire from="(230,150)" to="(260,150)"/>
+    <wire from="(230,210)" to="(260,210)"/>
+    <wire from="(230,270)" to="(260,270)"/>
+    <wire from="(230,330)" to="(260,330)"/>
+    <wire from="(110,470)" to="(140,470)"/>
+    <wire from="(370,240)" to="(390,240)"/>
+    <wire from="(310,260)" to="(310,300)"/>
+    <wire from="(310,180)" to="(310,220)"/>
+    <wire from="(150,170)" to="(170,170)"/>
+    <wire from="(150,290)" to="(170,290)"/>
+    <wire from="(310,220)" to="(320,220)"/>
+    <wire from="(310,260)" to="(320,260)"/>
+    <wire from="(110,130)" to="(180,130)"/>
+    <wire from="(110,310)" to="(180,310)"/>
+    <wire from="(110,250)" to="(180,250)"/>
+    <wire from="(110,190)" to="(180,190)"/>
+    <wire from="(140,150)" to="(140,210)"/>
+    <wire from="(140,210)" to="(140,270)"/>
+    <wire from="(140,270)" to="(140,330)"/>
+    <wire from="(150,170)" to="(150,230)"/>
+    <wire from="(150,230)" to="(150,290)"/>
+    <wire from="(150,290)" to="(150,350)"/>
+    <comp lib="0" loc="(110,250)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="c"/>
+    </comp>
+    <comp lib="6" loc="(349,39)" name="Text">
+      <a name="text" val="I didn't really know what the question meant, so I assumed that if the selection bits are 00, then the signal that should output is A,"/>
+    </comp>
+    <comp lib="1" loc="(230,210)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(310,180)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(310,300)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(110,500)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="selection 2"/>
+    </comp>
+    <comp lib="1" loc="(230,270)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate2" val="true"/>
+    </comp>
+    <comp lib="1" loc="(230,150)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+    </comp>
+    <comp lib="0" loc="(110,310)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="d"/>
+    </comp>
+    <comp lib="0" loc="(390,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(110,470)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="selection 1"/>
+    </comp>
+    <comp lib="6" loc="(349,57)" name="Text">
+      <a name="text" val="if the selection bits are 01, then the signal that should output is B"/>
+    </comp>
+    <comp lib="1" loc="(370,240)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(349,98)" name="Text">
+      <a name="text" val="if the selection bits are 11, then the signal that should output is D"/>
+    </comp>
+    <comp lib="0" loc="(110,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="1" loc="(230,330)" name="AND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="0" loc="(110,190)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="6" loc="(349,78)" name="Text">
+      <a name="text" val="if the selection bits are 10, then the signal that should output is C"/>
+    </comp>
+  </circuit>
+</project>

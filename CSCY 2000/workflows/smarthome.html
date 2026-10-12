@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart Home Appliances - Household Haven</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Parkinsans:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logoimg" src="images/hhlogo.png" alt="img of household haven logo"></a>
+        </div>
+    </header>
+
+    <nav class="tablet-desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="kitchen.html">Kitchen Appliances</a>
+        <a href="cleaning.html">Cleaning Appliances</a>
+        <a href="smarthome.html">Smart Home Appliances</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="contactabout.html">About Us</a>
+    </nav>
+
+    <div class="main-content">
+        <h1>Smart Home Appliances</h1>
+        <p>Enhance your home with our range of smart appliances designed for convenience and efficiency.</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2022/11/smartthermostats-2048px-3105.jpg" alt="Smart Thermostat" width="500" height="600">
+                <h3>Smart Thermostat</h3>
+                <p>$199.99</p>
+                <button class="view-details" data-product="1">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.prismic.io//intuzwebsite/7a3d7e62-18ff-4502-b6cb-fde0bd23c4d0_image+%286%29.png?w=2400&q=80&auto=format,compress&fm=png8" alt="Smart Security Camera" width="500" height="600">
+                <h3>Smart Security Camera</h3>
+                <p>$149.99</p>
+                <button class="view-details" data-product="2">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61DD9OxpX8L._AC_UF894,1000_QL80_.jpg" alt="Smart Light Bulb" width="500" height="600">
+                <h3>Smart Light Bulb</h3>
+                <p>$29.99</p>
+                <button class="view-details" data-product="3">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71oSdB6KWdL.jpg" alt="Smart Door Lock" width="500" height="600">
+                <h3>Smart Door Lock</h3>
+                <p>$249.99</p>
+                <button class="view-details" data-product="4">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.cnet.com/a/img/resize/1be4ceb5058ce3c094ddedc21edc48fbdd37f841/hub/2016/07/15/bda3c418-740a-4183-93fc-3b95d5a1cc58/samsung-family-hub-refrigerator-promo.jpg?auto=webp&fit=crop&height=1200&width=1200" alt="Smart Door Fridge" width="500" height="600">
+                <h3>Smart Fridge</h3>
+                <p>$1649.99</p>
+                <button class="view-details" data-product="5">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.thewirecutter.com/wp-content/media/2023/09/smart-doorbell-camera-2048px-0033.jpg?auto=webp&quality=75&width=1024" alt="Smart Door Bell" width="500" height="600">
+                <h3>Smart Doorbell</h3>
+                <p>$79.99</p>
+                <button class="view-details" data-product="6">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for product details -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Product Name</h2>
+            <p id="modal-description">Description of the product will go here.</p>
+            <p><strong>Price:</strong> <span id="modal-price"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="krishnaportfolio.html">Krishna Shah </a>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <p><a href="mailto:customservice@householdhaven.com">customservice@householdhaven.com</a></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

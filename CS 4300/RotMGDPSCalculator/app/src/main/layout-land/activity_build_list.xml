@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rotmg_bg"
+    android:orientation="horizontal"
+    android:padding="14dp">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_hero_panel"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtBuildListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Builds"
+            android:textColor="@color/rotmg_text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtBuildListSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Browse saved loadouts and compare setups side by side."
+            android:textColor="@color/rotmg_text_secondary"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBuilds"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_recycler_panel"
+        android:clipToPadding="false"
+        android:padding="12dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

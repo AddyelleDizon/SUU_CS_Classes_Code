@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forms</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="container">
+
+    <!--Use the header area for the website name or logo-->
+    <header>
+    </header>
+
+    <!--Use the nav area to add hyperlinks to other pages within the website-->
+    <nav>
+    </nav>
+
+    <!--Use the main area to add the main content of the webpage-->
+    <main>
+        <div id="form">
+            <h2>Form Example</h2>
+            <form class="form-grid"> <!-- Start Form -->
+                <fieldset>
+                    <legend>Application Information</legend>
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="Name" required placeholder="First and last name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="address@example.com">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Job Interest</legend>
+                    <p>I am interested in:</p>
+                    <label for="prgm"><input type="checkbox" name="interest" id="prgm" value="Programming">Programming</label>
+                    <label for="ntwk"><input type="checkbox" name="interest" id="ntwk" value="Networking">Networking</label>
+                    <label for="madev"><input type="checkbox" name="interest" id="madev" value="Mobile App Development">Mobile App Development</label>
+                    <label for="webdev"><input type="checkbox" name="interest" id="webdev" value="Web Development">Web Development</label>
+                    <p>Start Date: <input type="date" id="date" name="date" required placeholder="mm/dd/yyyy"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Referral Source</legend>
+                    <select name="reference" id="reference">
+                        <option value="ad">Advertisement</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comments and Questions</legend>
+                    <label for="questions">Questions?</label>
+                    <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+
+                    <input type="submit" id="submit" value ="Submit" class="btn">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!--Use the footer area to add webpage footer content-->
+    <footer>
+    </footer>
+
+    </div>
+</body>
+
+</html>
+

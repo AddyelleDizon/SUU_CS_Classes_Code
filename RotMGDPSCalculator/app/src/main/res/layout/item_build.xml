@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#2A2A2A"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:id="@+id/txtBuildClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class:"
+        android:textColor="#FFD700"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtBuildWeapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weapon:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtBuildAbility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ability:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtBuildArmor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Armor:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtBuildRing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ring:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtBuildDps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DPS:"
+        android:textColor="#00FFAA"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

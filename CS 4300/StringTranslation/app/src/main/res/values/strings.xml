@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Facebook</string>
+    <string name="name">Name</string>
+    <string name="submit_button">Submit</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="next_button">Next</string>
+    <string name="back_button">Back</string>
+    <string name="menu_button">Menu</string>
+    <string name="title_label">Welcome to Facebook!</string>
+    <string name="friends_button">Friends</string>
+    <string name="status_label">Enter your status here:</string>
+    <string name="groups_label">Groups</string>
+    <string name="meta_label">Meta</string>
+</resources>

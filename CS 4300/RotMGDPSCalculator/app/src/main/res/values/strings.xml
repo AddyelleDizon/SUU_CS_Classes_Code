@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RotMG DPS Calculator</string>
+    <string name="main_subtitle">Build a class setup, calculate DPS, and save your best loadouts.</string>
+    <string name="create_build">Create Build</string>
+    <string name="view_builds">View Builds</string>
+    <string name="build_setup">Build Setup</string>
+    <string name="select_class">Select Class</string>
+    <string name="equipment_selection">Equipment Selection</string>
+    <string name="weapon">Weapon</string>
+    <string name="ability">Ability</string>
+    <string name="armor">Armor</string>
+    <string name="ring">Ring</string>
+    <string name="available_equipment_preview">Available Equipment Preview</string>
+    <string name="enemy_defense">Enemy Defense</string>
+    <string name="enemy_defense_default">Enemy Defense: 0</string>
+    <string name="enemy_defense_value">Enemy Defense: %1$d</string>
+    <string name="calculate_dps">Calculate DPS</string>
+    <string name="dps_result">DPS Result</string>
+    <string name="average_dps_default">Average DPS: 0.00</string>
+    <string name="average_dps_value">Average DPS: %1$.2f</string>
+    <string name="result_stats_placeholder">Attack: 0 | Dexterity: 0 | Enemy Defense: 0</string>
+    <string name="result_stats_value">Attack: %1$d | Dexterity: %2$d | Enemy Defense: %3$d</string>
+    <string name="build_saved">Build saved</string>
+</resources>

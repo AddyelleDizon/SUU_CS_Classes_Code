@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://lumos.csis.suu.edu/~barkern/CS_4350/AttendingSUU.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Attending SUU</title>
+        <style>
+        /* Internal CSS  */
+        h1 {
+            color: green;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        div {
+            color: blue;
+            font-size: 25px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+
+    <script src="AttendingSUU.js"></script>
+    <link rel="stylesheet" href="attendingsuu.css">
+</head>
+
+<body>
+    <form id="mainForm" action="AttendingSUUMoreInfo.html"> 
+        <label>First Name <input id="fName" name="First Name"></label>
+        <br>
+        <label>Last Name <input id="lName" name="Last Name"></label>
+        <br>
+        <label>Move in Date <input type="date" min="2025-09-24" id="moveIn" name="Move-In-Date" onclick="setDateToToday('moveIn', 'min')">
+        </label>
+
+        <br>
+        <label for="myDropdown">Which major are you planing on selecting?
+
+        <select id="myDropdown" name="Major">
+            <option value="">Select an option</option>           
+        </select>
+
+        <script>
+            populateDropdown()
+        </script>
+
+        </label>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+        <button onclick="randomStudent()" id="randStudent">Random Student</button>
+    </form>
+    <h3>I chose to change the text themselves into the SUU colors.</h3>
+    <p id = "suured">SUU Red is the following Hex value: #DB0000</p>
+    <p id = "suublack">SUU Black is the following Hex value: #000000</p>
+    <p id = "suugray">SUU Grey is the following Hex value: #E7E7E7</p>
+
+    <script>
+        preserveFormData("mainForm")
+    </script>
+
+</body>
+
+</html>

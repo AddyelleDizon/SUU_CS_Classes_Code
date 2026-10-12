@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="General"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:textSize="18sp"
+        android:background="#2C2F33"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/serverList"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="#202225"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/inputBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/channelList"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:background="#2F3136"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/inputBar"
+        app:layout_constraintStart_toEndOf="@id/serverList"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#36393F"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/inputBar"
+        app:layout_constraintStart_toEndOf="@id/channelList"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#40444B"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Message #general"
+            android:textColor="#FFFFFF"
+            android:hintTextColor="#AAAAAA"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="#7289DA"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

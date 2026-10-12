@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://lumos.csis.suu.edu/~barkern/CS_4350/AttendingSUUPage4.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Attending SUU Even More Info</title>
+        <style>
+        /* Internal CSS  */
+        h1 {
+            color: green;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        div {
+            color: blue;
+            font-size: 25px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+    <script src="AttendingSUU.js"></script>
+    <link rel="stylesheet" href="attendingsuu.css">
+</head>
+<body>
+    <form action="AttendingSUUStudentInfo.html" id="mainForm">
+     <label>Secret Code: <input type="password" id="confCode"></label>
+     <br>
+     <label>Verify Secret Code: <input type="password" name="Secret-Code" id="initCode"></label>
+     <br>
+     <label>How would you rate your current website experience? <input type="range" min="0" max="100" name="Rating"></label>
+     <br>
+     <label>Select a time you would like to see an advisor:<input type="time" name="Advisor-Time"></label>
+     <br>
+     <label>What is your favorite webpage: <input type="url" name="Favorite-URL"></label>
+     <br>
+     &nbsp;&nbsp;(Depending on browser support, the url field can be automatically validated when submitted.)
+     <br>
+     <label>What is your favorite week of the year?<input type="week" name="Favorite-Week"></label>
+     <br>
+     &nbsp;&nbsp;(<strong>Note:</strong> type="week" is not supported in Firefox, Safari or Internet Explorer 11.)     
+     <br>
+     <input type="submit" value="Submit">
+        <br>
+        <input type="reset" value="Reset">
+        <br>
+    </form>
+
+    <script>
+        verifySecretCode("initCode", "confCode")
+        preserveFormData("mainForm")
+    </script>
+    
+    <h3>I chose to change the text themselves into the SUU colors.</h3>
+    <p id = "suured">SUU Red is the following Hex value: #DB0000</p>
+    <p id = "suublack">SUU Black is the following Hex value: #000000</p>
+    <p id = "suugray">SUU Grey is the following Hex value: #E7E7E7</p>
+
+
+</body></html>

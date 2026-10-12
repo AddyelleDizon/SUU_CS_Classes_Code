@@ -1,0 +1,33 @@
+//https://cppsecrets.com/users/113459711411711010711710997114469711310964103109971051084699111109/C-Program-to-Illustrate-Race-Condition-between-Parent-and-Child-Processes.php//
+#include <stdio.h>
+#include <unistd.h> 
+
+
+void print_unbuffered(const char* str)
+{
+	setbuf(stdout, NULL);
+	while(true)
+	{
+		char ch = *str;
+		if (ch == '\0') break;
+		printf("%c", ch); // alternatively, use putc
+		str++;
+	}
+}
+
+int main()
+{
+	pid_t pid = fork();
+	if (pid < 0)
+	{
+		return -1;
+	}
+	if (pid)
+	{
+		print_unbuffered("parent parent parent parent parent");
+	}
+	else
+	{
+		print_unbuffered("child child child child child");
+	}
+}

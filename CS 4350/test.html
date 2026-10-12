@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Dropdown Selection</title>
+</head>
+<body>
+
+<select id="myDropdown">
+  <option value="apple">Apple</option>
+  <option value="banana">Banana</option>
+  <option value="cherry">Cherry</option>
+  <option value="date">Date</option>
+</select>
+
+<button onclick="selectRandomOption()">Select Random</button>
+
+<script>
+function selectRandomOption() {
+  const dropdown = document.getElementById('myDropdown');
+  const numOptions = dropdown.options.length;
+  const randomIndex = Math.floor(Math.random() * numOptions);
+  dropdown.selectedIndex = randomIndex;
+}
+</script>
+
+</body>
+</html>
