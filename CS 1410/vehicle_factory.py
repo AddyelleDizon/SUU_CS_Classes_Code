@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 from vehicle_factory import *
 
+
+
 class Manufacturer(ABC):
     @abstractmethod
     def create_car(self):
